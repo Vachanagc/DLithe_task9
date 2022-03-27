@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and methods</title>
+</head>
+<body>
+<h1> ARRAYS AND METHODS</h1>
+    <script>
+        var courses=["HTML","CSS","JS"];
+        document.write(courses+"<br>")
+        document.write(courses.length +"<br>");
+
+      
+        document.write(courses.push("JQUERY","BOOTSTARP","HTML")+"<br>");
+        document.write(courses+"<br>");
+
+       
+        courses.unshift("SQL");
+        document.write(courses+"<br>");
+
+       
+        var last=courses.pop();
+        document.write(last+"<br>")
+        document.write(courses+"<br>");
+
+        
+        var first=courses.shift();
+        document.write(first+"<br>");
+        document.write(courses+"<br>"+"<hr>");
+
+        var vehicles=["css","html","js","dlithe"];
+        
+        document.write(vehicles+"<br>");
+        vehicles.splice(2,0,'dlithe');
+        document.write(vehicles+"<br>");
+        vehicles.splice(3,1,'css');
+        document.write(vehicles+"<br>");
+        vehicles.splice(4,2,'css','html');
+        document.write(vehicles+"<br>"+"<hr>");
+
+        var numbers1=["one","two","three"];
+        var numbers2=["four","five","six"];
+        var numbers=numbers1.concat(numbers2);
+        document.write(numbers+"<br>");
+        var num=numbers.concat("seven","eight");
+        document.write(num+"<br>");
+        var num1=num.concat(9,10);
+        document.write(num1+"<br>");
+      
+        var iterateindex =num1.entries();
+        for(var item of iterateindex)
+        {
+            document.write(item+"<br>");
+        }
+      
+        num1.reverse();
+        document.write(num1+"<br>"+"<hr>");
+       
+        var os=["BOOTCAMP","DLITHE","JS","CSS","HTML"];
+        var result=os.indexOf("JS");
+        document.write(result+"<br>");
+        var result1=os.lastIndexOf("CSS");
+        document.write(result1+"<br>"+"<hr>");
+
+        document.write(os.toString()+"<br>");
+        document.write(os.join()+"<br>");
+        
+      
+        var result2=os.slice(1,5);
+        document.write(result2+"<br>");
+        var result3=os.slice(-5,-1);
+        document.write(result3+"<br>");
+
+    
+        var values=[6,2,8,1,4,7,0,3];
+        document.write(values.sort()+"<br>");
+
+    
+        var empname=["sangeetha","Pramod","adithi","pinky","varsha"];
+        var result4=empname.filter(empname=>empname.length==4);
+        document.write(result4);
+    </script>
+    
+</body>
+</html>
